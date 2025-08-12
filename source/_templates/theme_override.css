@@ -1,7 +1,17 @@
-/* override content width and padding */
-.wy-nav-content {
-    padding: 1.618em 3.236em;
-    height: 100%;
-    max-width: 100% !important;
-    margin: auto;
+/* Make headings bold and red */
+h1, h2, h3 {
+    color: #b30000;
+    font-weight: bold;
+}
+
+/* Change body font */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Highlight code blocks background */
+pre {
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 5px;
 }
