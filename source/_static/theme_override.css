@@ -8,17 +8,17 @@
   display: none !important;
 }
 
-/* Full page background & text defaults */
+/* Page background */
 html, body {
   margin: 0;
   padding: 0;
-  background: #e9edf1; /* light gray page background */
-  color: #222;
-  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: #e9edf1 !important; /* force page background */
+  color: #222 !important;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif !important;
   overflow-x: hidden !important;
 }
 
-/* Remove RTD layout restrictions & add z-index */
+/* Make content container full width with padding */
 .wy-grid-for-nav,
 .wy-nav-content-wrap,
 .wy-nav-content,
@@ -26,64 +26,27 @@ div.document {
   margin: 0 auto !important;
   padding: 0 !important;
   width: 100% !important;
-  max-width: 1400px !important; /* control content width */
+  max-width: 1400px !important;
   box-sizing: border-box !important;
-  position: relative;
-  z-index: 10;
+  position: relative !important;
+  z-index: 10 !important;
 }
 
-/* Content area styling */
+/* Content background */
 div.document {
   padding: 2rem 2rem !important; /* equal padding */
-  background: #fdfdfd; /* light background for content */
-  border-radius: 8px; /* rounded corners */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* subtle shadow */
+  background-color: #fdfdfd !important; /* light content background */
+  border-radius: 8px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
 }
 
 /* Headings */
 h1, h2, h3 {
-  font-weight: bold;
-  color: #0a4b8c;
-  margin-top: 1.4em;
+  font-weight: bold !important;
+  color: #0a4b8c !important;
+  margin-top: 1.4em !important;
 }
 h1 {
-  border-bottom: 3px solid #0a4b8c;
-  padding-bottom: 8px;
-}
-
-/* Links */
-a {
-  color: #0a7bbf;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-
-/* Code */
-pre, code {
-  background: #f4f6f8;
-  border: 1px solid #e6e9ec;
-  border-radius: 4px;
-}
-pre {
-  padding: 12px;
-  overflow-x: auto;
-}
-code {
-  padding: 0 4px;
-}
-
-/* Tables */
-table.docutils {
-  width: 100%;
-  border-collapse: collapse;
-}
-table.docutils th, table.docutils td {
-  border: 1px solid #e6e6e6;
-  padding: 8px;
-}
-table.docutils th {
-  background: #0a4b8c;
-  color: #fff;
+  border-bottom: 3px solid #0a4b8c !important;
+  padding-bottom: 8px !important;
 }
