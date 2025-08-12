@@ -12,7 +12,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: #fff;
+  background: #e9edf1; /* light gray page background */
   color: #222;
   font-family: "Segoe UI", Roboto, Arial, sans-serif;
   overflow-x: hidden !important;
@@ -28,13 +28,16 @@ div.document {
   width: 100% !important;
   max-width: 1400px !important; /* control content width */
   box-sizing: border-box !important;
-  position: relative; /* required for z-index */
-  z-index: 10; /* keep content above other elements */
+  position: relative;
+  z-index: 10;
 }
 
-/* Equal left/right padding */
+/* Content area styling */
 div.document {
-  padding: 2rem 2rem !important; /* 2rem top/bottom, 2rem left/right */
+  padding: 2rem 2rem !important; /* equal padding */
+  background: #fdfdfd; /* light background for content */
+  border-radius: 8px; /* rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* subtle shadow */
 }
 
 /* Headings */
