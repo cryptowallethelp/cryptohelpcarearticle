@@ -29,4 +29,4 @@ html_theme = 'alabaster'
 html_static_path = ['_static']
 
 def setup(app):
-    app.add_css_file('_templates/theme_override.css')
+    app.add_css_file('theme_override.css')
