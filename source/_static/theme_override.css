@@ -28,13 +28,13 @@ div.document {
   width: 100% !important;
   max-width: 1400px !important; /* control content width */
   box-sizing: border-box !important;
-  position: relative; /* required for z-index to work */
-  z-index: 10; /* ensures content stays above other elements */
+  position: relative; /* required for z-index */
+  z-index: 10; /* keep content above other elements */
 }
 
-/* Add left/right space inside content */
+/* Equal left/right padding */
 div.document {
-  padding: 2rem 3rem !important; /* top/bottom 2rem, sides 3rem */
+  padding: 2rem 2rem !important; /* 2rem top/bottom, 2rem left/right */
 }
 
 /* Headings */
