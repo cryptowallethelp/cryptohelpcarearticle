@@ -18,7 +18,7 @@ html, body {
   overflow-x: hidden !important;
 }
 
-/* Remove RTD layout restrictions */
+/* Remove RTD layout restrictions & add z-index */
 .wy-grid-for-nav,
 .wy-nav-content-wrap,
 .wy-nav-content,
@@ -28,6 +28,8 @@ div.document {
   width: 100% !important;
   max-width: 1400px !important; /* control content width */
   box-sizing: border-box !important;
+  position: relative; /* required for z-index to work */
+  z-index: 10; /* ensures content stays above other elements */
 }
 
 /* Add left/right space inside content */
